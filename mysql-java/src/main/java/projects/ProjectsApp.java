@@ -112,6 +112,7 @@ public class ProjectsApp {
 		
 		Project project = new Project();
 		
+		project.setProjectId(curProject.getProjectId());
 		
 		project.setProjectName(Objects.isNull(projectName)
 			? curProject.getProjectName() : projectName);

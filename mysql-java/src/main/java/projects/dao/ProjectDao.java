@@ -208,8 +208,9 @@ public class ProjectDao extends DaoBase {
 			+ "actual_hours = ?, "
 			+ "difficulty = ?, "
 			+ "notes = ?, "
-			+ "WHERE project_id = ?, ";
+			+ "WHERE project_id = ? ";
 		// @formatter:on
+	System.out.println(sql);
 	
 	try(Connection conn = DbConnection.getConnection()) {
 		startTransaction(conn);
